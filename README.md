@@ -6,6 +6,8 @@ A structured multi-agent system for Claude Code. 12 specialist agents, each owns
 
 **[View the Agent Wiki](https://bheng.vercel.app/ai/agents)** - interactive showcase with animations
 
+![Nexus Agent System](preview.webp)
+
 ## The 12 Agents
 
 | # | Agent | Role | Color | Scope |
@@ -37,26 +39,19 @@ No agent steps on another's territory. Snow orchestrates everything.
 
 ### As CLAUDE.md instructions
 
-Copy the agent table and rules into your project's `.claude/CLAUDE.md`:
+Copy `CLAUDE.md` into your project's root. Claude Code will automatically read it and apply the agent roles.
 
-```md
-## Agent System - Nexus
-12 specialist agents. Each owns one concern. No overlap.
+### As a Claude Code skill
 
-| # | Name | Role | Owns |
-|---|------|------|------|
-| 1 | Snow | Orchestrator | Final approval, full visibility |
-| 2 | Blaze | Architecture | System design, PR reviews |
-...
-```
+Copy `.claude/commands/nexus.md` into your project. Then run `/nexus` in Claude Code to activate the agent system.
 
 ### As a JSON config
 
-Download `nexus-agents.json` and use it in your tooling, dashboards, or CI pipelines.
+Use `agents.json` in your tooling, dashboards, or CI pipelines.
 
 ### As a React component
 
-Drop the `page.tsx` into any Next.js app at `app/ai/agents/page.tsx` for an interactive agent wiki.
+Drop `components/AgentWiki.tsx` into any Next.js app for an interactive agent wiki page.
 
 ## Built by
 
