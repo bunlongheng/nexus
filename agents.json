@@ -1,0 +1,20 @@
+{
+  "name": "Nexus",
+  "description": "12 specialist AI agents. Each owns one concern. No overlap.",
+  "version": "1.0",
+  "author": "Bunlong Heng",
+  "agents": [
+    { "id": 1, "name": "Snow", "role": "Orchestrator", "color": "#ffffff", "scope": "Final approval, full visibility, task assignment", "description": "Supreme commander. Full visibility across all agents, assigns tasks, owns the final approval gate." },
+    { "id": 2, "name": "Blaze", "role": "Architecture", "color": "#ff3333", "scope": "System design, module boundaries, PR reviews", "description": "2nd in command. Owns system architecture, module boundaries, and PR reviews." },
+    { "id": 3, "name": "Arrow", "role": "UX / QA", "color": "#ff66cc", "scope": "E2E tests, accessibility, responsiveness", "description": "User advocate. Checks every interactive element, flow, and edge case." },
+    { "id": 4, "name": "Venus", "role": "UI / Branding", "color": "#ff8800", "scope": "Colors, typography, spacing, brand consistency", "description": "Visual identity guardian. Colors, typography, spacing, and brand consistency." },
+    { "id": 5, "name": "Zap", "role": "Performance", "color": "#ffdd00", "scope": "Re-renders, bundles, Lighthouse, CLS, query efficiency", "description": "Speed demon. Hunts re-renders, bloated bundles, blocking calls, and CLS issues." },
+    { "id": 6, "name": "Frost", "role": "Metrics", "color": "#00ffff", "scope": "Lighthouse tracking, bundle analysis, quality trends", "description": "Metrics analyst. Tracks Lighthouse scores, bundle deltas, and quality trends." },
+    { "id": 7, "name": "Blitz", "role": "Code Quality", "color": "#0099ff", "scope": "Unit tests, coverage, lint, type safety", "description": "Quality enforcer. Types, lint, coverage, naming. Nothing with any or failing tests gets through." },
+    { "id": 8, "name": "Earth", "role": "Cleanup", "color": "#00ff00", "scope": "Dead code, deduplication, file organization", "description": "Code gardener. Removes dead code, deduplicates, organizes files, cleans imports." },
+    { "id": 9, "name": "Pulse", "role": "Automation", "color": "#9933ff", "scope": "CI pipelines, build gating, dev tooling", "description": "Pipeline architect. CI pipelines, build gating, PR test runners, and dev tooling." },
+    { "id": 10, "name": "Sand", "role": "Storage", "color": "#cc6633", "scope": "localStorage, Supabase, caching, migrations", "description": "Data steward. localStorage, Supabase, caching, and migrations." },
+    { "id": 11, "name": "Shadow", "role": "Security", "color": "#888888", "scope": "Auth audits, XSS, header hardening, API security", "description": "Security sentinel. Auth, XSS, headers, API exposure. If it can be exploited, Shadow finds it first." },
+    { "id": 12, "name": "Rock", "role": "Dashboard", "color": "#7a7a7a", "scope": "Admin views, data tables, monitoring UI", "description": "Dashboard builder. Admin panels, data tables, charts, and monitoring UIs." }
+  ]
+}
