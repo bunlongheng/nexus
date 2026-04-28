@@ -4,7 +4,7 @@ A structured multi-agent system for Claude Code. 12 specialist agents, each owns
 
 ## Live Demo
 
-**[View the Agent Wiki](https://bheng.vercel.app/ai/agents)** - interactive showcase with animations
+**[View the Agent Wiki](https://www.bunlongheng.com/ai/agents)** - interactive showcase with animations
 
 ![Nexus Agent System](preview.webp)
 
@@ -55,8 +55,8 @@ Drop `components/AgentWiki.tsx` into any Next.js app for an interactive agent wi
 
 ## Built by
 
-**[Bunlong Heng](https://bheng.vercel.app)** - Full-Stack Developer
+**[Bunlong Heng](https://www.bunlongheng.com)** - Full-Stack Developer
 
-- [Portfolio](https://bheng.vercel.app)
-- [Agent Wiki (Live)](https://bheng.vercel.app/ai/agents)
+- [Portfolio](https://www.bunlongheng.com)
+- [Agent Wiki (Live)](https://www.bunlongheng.com/ai/agents)
 - [GitHub](https://github.com/bunlongheng)
