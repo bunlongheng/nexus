@@ -1,14 +1,39 @@
-# Nexus - 12 AI Agent System
+<div align="center">
 
-A structured multi-agent system for Claude Code. 12 specialist agents, each owns one concern, no overlap. Color-coded with clear roles, responsibilities, and memory.
+# nexus
 
-## Live Demo
+**A 12-agent specialist system for Claude Code.**
 
-**[View the Agent Wiki](https://www.bunlongheng.com/ai/agents)** - interactive showcase with animations
+Twelve color-coded agents, each owning exactly one concern, with zero overlap.
 
-![Nexus Agent System](preview.webp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-agents-D97757)
 
-## The 12 Agents
+<img src="assets/hero.svg" alt="Nexus 12-agent system" width="660">
+
+[View the live agent wiki](https://www.bunlongheng.com/ai/agents)
+
+</div>
+
+## Why
+
+A single coding assistant tries to do everything at once: architecture, UX, performance,
+security, cleanup. The concerns blur together and things slip through. Nexus splits the
+work into 12 named specialists, each with a fixed scope. When Claude Code touches your
+code, the relevant agents review their slice and nothing else. One orchestrator, Snow,
+assigns work and gives final approval, so reviews stay structured instead of sprawling.
+
+## Features
+
+- 12 specialist agents, each owning one concern with no overlap
+- Color-coded roles for instant recognition (white orchestrator, red architecture, and so on)
+- Ships in four ready-to-use formats: `CLAUDE.md`, a `/nexus` skill, `agents.json`, and a React component
+- A fixed report format so every agent answers in the same shape
+- A single orchestrator (Snow) that assigns tasks and owns the final approval gate
+- Drop-in, dependency-free, framework-agnostic
+
+## The 12 agents
 
 | # | Agent | Role | Color | Scope |
 |---|-------|------|-------|-------|
@@ -16,47 +41,57 @@ A structured multi-agent system for Claude Code. 12 specialist agents, each owns
 | 2 | **Blaze** | Architecture | Red | System design, module boundaries, PR reviews |
 | 3 | **Arrow** | UX / QA | Pink | E2E tests, accessibility, responsiveness |
 | 4 | **Venus** | UI / Branding | Orange | Colors, typography, spacing, brand consistency |
-| 5 | **Zap** | Performance | Yellow | Re-renders, bundles, Lighthouse, CLS, queries |
-| 6 | **Frost** | Metrics | Cyan | Lighthouse tracking, bundle analysis, trends |
+| 5 | **Zap** | Performance | Yellow | Re-renders, bundles, Lighthouse, CLS, query efficiency |
+| 6 | **Frost** | Metrics | Cyan | Lighthouse tracking, bundle analysis, quality trends |
 | 7 | **Blitz** | Code Quality | Blue | Unit tests, coverage, lint, type safety |
 | 8 | **Earth** | Cleanup | Green | Dead code, deduplication, file organization |
 | 9 | **Pulse** | Automation | Purple | CI pipelines, build gating, dev tooling |
 | 10 | **Sand** | Storage | Brown | localStorage, Supabase, caching, migrations |
-| 11 | **Shadow** | Security | Grey | Auth audits, XSS, headers, API security |
+| 11 | **Shadow** | Security | Grey | Auth audits, XSS, header hardening, API security |
 | 12 | **Rock** | Dashboard | Slate | Admin views, data tables, monitoring UI |
 
-## How It Works
+## Install
 
-Each agent has a dedicated scope. When Claude Code works on your codebase, agents are invoked based on what's being touched:
+Clone the repo and copy whichever format you want into your project:
 
-- Editing a component? **Venus** checks branding, **Arrow** checks UX, **Blitz** checks types
-- Adding an API route? **Shadow** audits security, **Sand** checks queries, **Zap** checks performance
-- Deploying? **Pulse** verifies CI, **Frost** tracks metrics, **Snow** gives final approval
+```bash
+git clone https://github.com/bunlongheng/nexus
+```
 
-No agent steps on another's territory. Snow orchestrates everything.
+| File | Use it as |
+|---|---|
+| `CLAUDE.md` | Project instructions Claude Code reads automatically |
+| `.claude/commands/nexus.md` | A `/nexus` slash command skill |
+| `agents.json` | Machine-readable config for tooling, dashboards, or CI |
+| `components/AgentWiki.tsx` | An interactive React wiki for a Next.js app |
 
-## Usage
+## Quick start
 
-### As CLAUDE.md instructions
+**As `CLAUDE.md` instructions.** Copy `CLAUDE.md` into your project root. Claude Code reads
+it on every session and applies the agent roles automatically.
 
-Copy `CLAUDE.md` into your project's root. Claude Code will automatically read it and apply the agent roles.
+**As a Claude Code skill.** Copy `.claude/commands/nexus.md` into your project, then run
+`/nexus` in Claude Code to load the 12-agent system for that session.
 
-### As a Claude Code skill
+**As a JSON config.** Import `agents.json` into your own tooling, dashboards, or CI
+pipelines. It holds each agent's id, name, role, color, scope, and description.
 
-Copy `.claude/commands/nexus.md` into your project. Then run `/nexus` in Claude Code to activate the agent system.
+**As a React component.** Drop `components/AgentWiki.tsx` into a Next.js app for an
+interactive, animated agent wiki page.
 
-### As a JSON config
+## How it works
 
-Use `agents.json` in your tooling, dashboards, or CI pipelines.
+Each agent has a dedicated scope, so reviews never collide:
 
-### As a React component
+- Editing a component? **Venus** checks branding, **Arrow** checks UX, **Blitz** checks types.
+- Adding an API route? **Shadow** audits security, **Sand** checks queries, **Zap** checks performance.
+- Deploying? **Pulse** verifies CI, **Frost** tracks metrics, **Snow** gives final approval.
 
-Drop `components/AgentWiki.tsx` into any Next.js app for an interactive agent wiki page.
+No agent steps on another's territory, and Snow orchestrates the whole flow. Every agent
+answers in the same fixed report format: an H1 title, ALL-CAPS section headers, dash
+bullets, and a closing `SUMMARY` of 3 to 6 bullets, so output stays scannable no matter
+which specialist produced it.
 
-## Built by
+## License
 
-**[Bunlong Heng](https://www.bunlongheng.com)** - Full-Stack Developer
-
-- [Portfolio](https://www.bunlongheng.com)
-- [Agent Wiki (Live)](https://www.bunlongheng.com/ai/agents)
-- [GitHub](https://github.com/bunlongheng)
+[MIT](LICENSE)

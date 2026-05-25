@@ -1,0 +1,51 @@
+<svg width="660" height="300" viewBox="0 0 660 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nexus 12-agent system">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#141821"/>
+      <stop offset="100%" stop-color="#0a0c10"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="660" height="300" rx="14" fill="url(#bg)"/>
+
+  <!-- links from Snow (center) to all agents -->
+  <g stroke="#2a2f3a" stroke-width="1">
+    <line x1="330" y1="120" x2="120" y2="70"/>
+    <line x1="330" y1="120" x2="210" y2="50"/>
+    <line x1="330" y1="120" x2="330" y2="42"/>
+    <line x1="330" y1="120" x2="450" y2="50"/>
+    <line x1="330" y1="120" x2="540" y2="70"/>
+    <line x1="330" y1="120" x2="565" y2="135"/>
+    <line x1="330" y1="120" x2="540" y2="195"/>
+    <line x1="330" y1="120" x2="450" y2="220"/>
+    <line x1="330" y1="120" x2="210" y2="220"/>
+    <line x1="330" y1="120" x2="120" y2="195"/>
+    <line x1="330" y1="120" x2="95" y2="135"/>
+  </g>
+
+  <!-- 11 specialist nodes (real agent colors) -->
+  <g filter="url(#glow)">
+    <circle cx="120" cy="70"  r="7" fill="#ff3333"/>
+    <circle cx="210" cy="50"  r="7" fill="#ff66cc"/>
+    <circle cx="330" cy="42"  r="7" fill="#ff8800"/>
+    <circle cx="450" cy="50"  r="7" fill="#ffdd00"/>
+    <circle cx="540" cy="70"  r="7" fill="#00ffff"/>
+    <circle cx="565" cy="135" r="7" fill="#0099ff"/>
+    <circle cx="540" cy="195" r="7" fill="#00ff00"/>
+    <circle cx="450" cy="220" r="7" fill="#9933ff"/>
+    <circle cx="210" cy="220" r="7" fill="#cc6633"/>
+    <circle cx="120" cy="195" r="7" fill="#888888"/>
+    <circle cx="95"  cy="135" r="7" fill="#7a7a7a"/>
+  </g>
+
+  <!-- Snow: orchestrator at the center -->
+  <circle cx="330" cy="120" r="15" fill="#ffffff" filter="url(#glow)"/>
+  <circle cx="330" cy="120" r="15" fill="none" stroke="#cfd6e4" stroke-width="1" opacity="0.5"/>
+
+  <text x="330" y="252" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="30" font-weight="700" fill="#f5f7fa">Nexus</text>
+  <text x="330" y="278" text-anchor="middle" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="13" fill="#9aa3b2">12 specialist agents. Each owns one concern. No overlap.</text>
+</svg>
