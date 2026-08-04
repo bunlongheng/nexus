@@ -2,7 +2,7 @@
 
 # nexus
 
-**A 12-agent specialist system for Claude Code.**
+**A 12-agent specialist config pack for Claude Code.**
 
 Twelve color-coded agents, each owning exactly one concern, with zero overlap.
 
