@@ -52,7 +52,7 @@ Snow sits at the top as the orchestrator. The 11 specialists each own one slice 
 | <img src="assets/agents/7.png" width="42"> | 7 | **Blitz** | Code Quality | Blue | Unit tests, coverage, lint, type safety |
 | <img src="assets/agents/8.png" width="42"> | 8 | **Earth** | Cleanup | Green | Dead code, deduplication, file organization |
 | <img src="assets/agents/9.png" width="42"> | 9 | **Pulse** | Automation | Purple | CI pipelines, build gating, dev tooling |
-| <img src="assets/agents/10.png" width="42"> | 10 | **Sand** | Storage | Brown | localStorage, Supabase, caching, migrations |
+| <img src="assets/agents/10.png" width="42"> | 10 | **Sand** | Storage | Brown | localStorage, IndexedDB, caching, migrations |
 | <img src="assets/agents/11.png" width="42"> | 11 | **Shadow** | Security | Grey | Auth audits, XSS, header hardening, API security |
 | <img src="assets/agents/12.png" width="42"> | 12 | **Rock** | Dashboard | Slate | Admin views, data tables, monitoring UI |
 
