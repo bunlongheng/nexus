@@ -35,20 +35,26 @@ assigns work and gives final approval, so reviews stay structured instead of spr
 
 ## The 12 agents
 
-| # | Agent | Role | Color | Scope |
-|---|-------|------|-------|-------|
-| 1 | **Snow** | Orchestrator | White | Final approval, task assignment, full visibility |
-| 2 | **Blaze** | Architecture | Red | System design, module boundaries, PR reviews |
-| 3 | **Arrow** | UX / QA | Pink | E2E tests, accessibility, responsiveness |
-| 4 | **Venus** | UI / Branding | Orange | Colors, typography, spacing, brand consistency |
-| 5 | **Zap** | Performance | Yellow | Re-renders, bundles, Lighthouse, CLS, query efficiency |
-| 6 | **Frost** | Metrics | Cyan | Lighthouse tracking, bundle analysis, quality trends |
-| 7 | **Blitz** | Code Quality | Blue | Unit tests, coverage, lint, type safety |
-| 8 | **Earth** | Cleanup | Green | Dead code, deduplication, file organization |
-| 9 | **Pulse** | Automation | Purple | CI pipelines, build gating, dev tooling |
-| 10 | **Sand** | Storage | Brown | localStorage, Supabase, caching, migrations |
-| 11 | **Shadow** | Security | Grey | Auth audits, XSS, header hardening, API security |
-| 12 | **Rock** | Dashboard | Slate | Admin views, data tables, monitoring UI |
+<div align="center">
+  <img src="assets/agents-org.png" alt="Nexus agent hierarchy - Snow orchestrating 11 specialists" width="880">
+</div>
+
+Snow sits at the top as the orchestrator. The 11 specialists each own one slice and report up.
+
+| Icon | # | Agent | Role | Color | Scope |
+|:---:|---|-------|------|-------|-------|
+| <img src="assets/agents/1.png" width="42"> | 1 | **Snow** | Orchestrator | White | Final approval, task assignment, full visibility |
+| <img src="assets/agents/2.png" width="42"> | 2 | **Blaze** | Architecture | Red | System design, module boundaries, PR reviews |
+| <img src="assets/agents/3.png" width="42"> | 3 | **Arrow** | UX / QA | Pink | E2E tests, accessibility, responsiveness |
+| <img src="assets/agents/4.png" width="42"> | 4 | **Venus** | UI / Branding | Orange | Colors, typography, spacing, brand consistency |
+| <img src="assets/agents/5.png" width="42"> | 5 | **Zap** | Performance | Yellow | Re-renders, bundles, Lighthouse, CLS, query efficiency |
+| <img src="assets/agents/6.png" width="42"> | 6 | **Frost** | Metrics | Cyan | Lighthouse tracking, bundle analysis, quality trends |
+| <img src="assets/agents/7.png" width="42"> | 7 | **Blitz** | Code Quality | Blue | Unit tests, coverage, lint, type safety |
+| <img src="assets/agents/8.png" width="42"> | 8 | **Earth** | Cleanup | Green | Dead code, deduplication, file organization |
+| <img src="assets/agents/9.png" width="42"> | 9 | **Pulse** | Automation | Purple | CI pipelines, build gating, dev tooling |
+| <img src="assets/agents/10.png" width="42"> | 10 | **Sand** | Storage | Brown | localStorage, Supabase, caching, migrations |
+| <img src="assets/agents/11.png" width="42"> | 11 | **Shadow** | Security | Grey | Auth audits, XSS, header hardening, API security |
+| <img src="assets/agents/12.png" width="42"> | 12 | **Rock** | Dashboard | Slate | Admin views, data tables, monitoring UI |
 
 ## Install
 
